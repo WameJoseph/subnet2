@@ -5,19 +5,23 @@
     text-decoration: none; transition: 300ms;
 }
 
-body{display: flex; justify-content: center;}
+/* body{display: flex; justify-content: center;} */
 
 header{
     width: 100%;
     height: fit-content;
     display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
     background-color: rgb(8, 143, 143, 0.4);
+    position: sticky;
+    z-index: 1;
+    top: 0;
 }
 
 nav{
     width: 90%;
     display: flex; justify-content: space-between; align-items: center;
-    padding: 25px 0;
+    padding: 30px 0;
+
 }
 
 nav .logo{
@@ -64,6 +68,56 @@ main{
     display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
 }
 
+main section{
+    width: 100%;
+    display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
+}
+
+main section .top{
+    width: 100%;
+    display: flex; justify-content: space-between; flex-direction: row; align-items: center;
+    background-color: rgb(8, 143, 143, 0.4);
+    /* border: solid; */
+    height: fit-content;
+    padding: 1.2% 10%;
+    /* padding-top: 10%; */
+}
+
+main section .top .text{
+    /* border: solid; */
+    width: 50%;
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+    height: 100%; 
+}
+
+main section .top .text h1{
+    font-size: 42px;
+    font-family: 'Alexandria', sans-serif;
+    margin-bottom: 15px;
+    /* font-weight: 600; */
+}
+
+
+main section .img{
+    width: 50%;
+    height: 260px;
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;
+    background-image: url(calculator.svg); background-position: center; background-size: contain; background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1150px) {
     nav{
@@ -93,4 +147,60 @@ main{
     }
 
     .i{display: flex;}
+
+    main section .top .text h1{
+        font-size: 36px;
+        font-family: 'Alexandria', sans-serif;
+        margin-bottom: 15px;
+        /* font-weight: 600; */
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    main section .top{
+        padding: 5% 10%;
+        padding-bottom: 8%;
+    }
+    
+    main section .top .text{
+        width: 100%;
+    }
+    
+    main section .top .text h1{
+        font-size: 42px;
+        margin-bottom: 15px;
+        /* font-weight: 600; */
+    }
+     
+    main section .img{display: none;}
+
+}
+
+@media screen and (max-width: 650px) {
+
+    main section .top{
+        padding: 5% 7.5%;
+        padding-bottom: 15%;
+    }
+    
+    main section .top .text{
+        position: relative;
+        width: 100%;
+    }
+    
+    main section .top .text h1{
+        font-size: 38px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        line-height: 49px;
+        /* font-weight: 600; */
+    }
+    
+
 }

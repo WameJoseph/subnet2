@@ -314,7 +314,7 @@ main section .content .text .exp i{
         margin-left: 0px;
         display: flex; flex-direction: column; justify-content: flex-start; align-items: center; 
         /* text-align: center; */
-        margin-top: 20px;
+        margin-top: 25px;
         padding: 0 10px;
         margin-bottom: 40px;
     }

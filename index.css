@@ -180,12 +180,13 @@ main section .content .text{
     display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;
     width: 40%;
     margin-left: 40px;
+    margin-bottom: 40px;
 }
 
 
 main section .content .text .title{
     font-size: 24px;
-    color: black; margin-top: 15px; 
+    color: black; margin-top: 25px; 
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -306,6 +307,28 @@ main section .content .text .exp i{
         height: 350px;
         margin-top: -7%;
         padding:  7%;
+    }
+
+    main section .content .text{
+        width: 100%;
+        margin-left: 0px;
+        display: flex; flex-direction: column; justify-content: flex-start; align-items: center; 
+        /* text-align: center; */
+        margin-top: 20px;
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    main section .content .text .title{
+        text-align: center;
+        font-size: 24px;
+        color: black; margin-top: 15px; 
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    
+    main section .content .text .sub_txt{
+        font-size: 16px;
     }
     
 

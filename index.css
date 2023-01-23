@@ -58,10 +58,11 @@ header{
     width: 100%;
     height: fit-content;
     display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
-    background-color: rgb(8, 143, 143, 0.4);
+    background-color: rgb(253, 218, 13, 0.6);
     position: sticky;
     z-index: 1;
     top: 0;
+    background-color: rgb(253, 218, 13, 0.6);
 }
 
 nav{
@@ -141,7 +142,7 @@ main .section4{
 main section .top{
     width: 100%;
     display: flex; justify-content: space-between; flex-direction: row; align-items: center;
-    background-color: rgb(8, 143, 143, 0.4);
+    background-color: rgb(253, 218, 13, 0.6);
     /* border: solid; */
     height: fit-content;
     padding: 1.2% 10%;

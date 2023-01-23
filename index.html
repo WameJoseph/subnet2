@@ -22,10 +22,10 @@
                 </span>
                 <i class="material-icons-outlined x" id="x" onclick="sidebarOff();">close</i>
             </nav>
-            <a href="" class="active a">IPv4 subnet calculator</a>
-            <a href="" class="a">Password Generator/Decryptor</a>
-            <a href="" class="a">MAC Address Finder</a>
-            <a href="" class="a">TCP/UDP Port Finder</a>
+            <a class=" a"  onclick="section1on()">IPv4 subnet calculator</a>
+            <a class="a"  onclick="section2on()">Password Generator/Decryptor</a>
+            <a class="a"  onclick="section3on()">MAC Address Finder</a>
+            <a class="a"  onclick="section4on()">TCP/UDP Port Finder</a>
         </div>
     </div>
     <header>
@@ -35,16 +35,16 @@
                 <a href="">IQ subnet</a>
             </span>
             <span class="nav2">
-                <a href="" class="active">IPv4 subnet calculator</a>
-                <a href="">Password Generator/Decryptor</a>
-                <a href="">MAC Address Finder</a>
-                <a href="">TCP/UDP Port Finder</a>
+                <a onclick="section1on()" id="sc_1">IPv4 subnet calculator</a>
+                <a onclick="section2on()" id="sc_2">Password Generator/Decryptor</a>
+                <a onclick="section3on()" id="sc_3">MAC Address Finder</a>
+                <a onclick="section4on()" id="sc_4">TCP/UDP Port Finder</a>
             </span>
             <i class="material-icons-outlined i" id="i" onclick="sidebarOn();">menu</i>
         </nav>
     </header>
     <main>
-        <section class="section1">
+        <section class="section1" id="section1">
             <div class="top">
                 <div class="text">
                     <h1>IPv4 Subnet Calculator</h1>
@@ -80,7 +80,7 @@
             </div>
         </section>
 
-        <section class="section2">
+        <section class="section2" id="section2">
             <div class="top">
                 <div class="text">
                     <h1>Password Generator/Decryptor</h1>
@@ -108,7 +108,7 @@
         </section>
 
 
-        <section class="section3">
+        <section class="section3" id="section3">
             <div class="top">
                 <div class="text">
                     <h1>MAC Address Finder</h1>
@@ -128,22 +128,27 @@
                     </span>
                 </form>
                 <div class="text">
-                    <p class="title">About passwords</p>
-                    <p class="sub_txt" id="exp_txt">Password - a secret series of characters that enables a user to access a file, computer, program or something secured with secret code.
-                        Remember! The easier a password is for the owner to remember generally means it will be easier for an attacker to guess.
-                        The strength of a password depends on the different types of characters, the overall length of the password, and whether the password can be found in a dictionary. To avoid brute force attack (crack passwords by trying as many possibilities as time and money permit) or more efficient in most cases, dictionary attack (and lists of common passwords are also typically tested) use long (at least 12 characters or more) passwords with letters (mixed lowercase and uppercase), punctuation, symbols, and numbers.
-                        Don't use dictionary words (in any language). Words are vulnerable.
-                        Avoid words spelled backwards, common misspellings, and abbreviations. Words in all languages are vulnerable.
-                        Don't use sequences or repeated characters, e.g. 12345678, 222222, abcdefg, qwerty.
-                        Don't use personal information: your name, wife's name, birthday, driver's license, passport number or similar info.
-                        The best way to create a secure and strong password - use our Strong Password Generator:)
+                    <p class="title">About MAC address</p>
+                    <p class="sub_txt" id="exp_txt">MAC address - Media Access Control address. MAC addresses - hardware addresses that uniquely identifies each node of a network. It is assigned by the vendor or manufacturer and saved to the device memory.
+                        According to the OSI model it is a second-level address. In IEEE 802 networks Data Link Control (DLC) layer is divided into two sub-layers: the Logical Link Control (LLC) layer and the Media Access Control (MAC) layer.
+                        First 3 bytes (or 24 bits) of MAC addresses are known as the Organizationally Unique Identifier (OUI) and usually encodes the manufacturer.
+                        MAC addresses usually are written in the six groups of two hexadecimal digits separated by colons (:) or hyphens (-), e.g. e8:04:62:90:07:62, 00-1E-37-18-50 DB.
+                        It is also used in another form (e.g. vendor Cisco) - the three groups of four hexadecimal digits separated by dots (.), e.g. 0016.4d2e.7d10.
+                        How you can identify MAC address and check MAC adress?
+                        
+                        Windows(XP,7,Vista,8):
+                        In the command prompt (CMD), type in getmac (or getmac /v /fo list for full info).
+                        
+                        Linux/Unix: type ifconfig -a. You must be root user or have appropriate permissions.
+                        Mac OS X: launch the Terminal and type ifconfig.
+                        Cisco: in the CLI type e.g. show arp.
                     </p>
                 </div>
             </div>
         </section>
 
 
-        <section class="section4">
+        <section class="section4" id="section4">
             <div class="top">
                 <div class="text">
                     <h1>TCP/UDP Port Finder</h1>

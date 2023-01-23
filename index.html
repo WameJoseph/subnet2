@@ -12,7 +12,22 @@
     <link rel="stylesheet" href="index.css">
     <title>IQ subnet | Free IPv4 subnet calculator </title>
 </head>
-<body>
+<body id="body">
+    <div class="sidebar" id="sidebar">
+        <div class="content">
+            <nav>
+                <span class="logo">
+                    <img src="o5.png" alt="">
+                    <a href="">IQ subnet</a>
+                </span>
+                <i class="material-icons-outlined x" id="x" onclick="sidebarOff();">close</i>
+            </nav>
+            <a href="" class="active a">IPv4 subnet calculator</a>
+            <a href="" class="a">Password Generator/Decryptor</a>
+            <a href="" class="a">MAC Address Finder</a>
+            <a href="" class="a">TCP/UDP Port Finder</a>
+        </div>
+    </div>
     <header>
         <nav>
             <span class="logo">
@@ -25,7 +40,7 @@
                 <a href="">MAC Address Finder</a>
                 <a href="">TCP/UDP Port Finder</a>
             </span>
-            <i class="material-icons-outlined i">menu</i>
+            <i class="material-icons-outlined i" id="i" onclick="sidebarOn();">menu</i>
         </nav>
     </header>
     <main>
@@ -65,5 +80,19 @@
         </section>
         <!-- <section style="height: 160vh;"></section> -->
     </main>
+    <footer>
+        <nav>
+            <span class="logo">
+                <img src="o5.png" alt="">
+                <a href="">IQ subnet</a>
+            </span>
+        </nav>
+        <span class="sp2">
+            
+        </span>
+    </footer>
+
+    
+    <script src="index.js"></script>
 </body>
 </html>

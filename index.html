@@ -44,7 +44,7 @@
         </nav>
     </header>
     <main>
-        <section class="sectioni">
+        <section class="section1">
             <div class="top">
                 <div class="text">
                     <h1>IPv4 Subnet Calculator</h1>
@@ -58,6 +58,7 @@
                     <input type="text" name="IP address" placeholder="(e.g. 192.168.1.1)" id=""> 
                     <label for="Netmask">Netmask <span>(subnet mask, CIDR or wildcard)</span></label> 
                     <input type="text" name="Netmask" placeholder="" id=""> 
+                    <label for="">Your IP Address* <span>146.70.99.199</span></label>
                     <span class="fl">
                         <button type="submit">Calculate</button>
                         <a href="" class="cancel">Clear <i class="material-icons-outlined">close</i></a>
@@ -65,7 +66,7 @@
                 </form>
                 <div class="text">
                     <p class="title">About IPv4 Subnet Calculator</p>
-                    <p class="sub_txt">Enter IP address and netmask (decimal separated by dots (e.g. 255.255.255.0), CIDR (e.g. 29) or a Cisco wildcard (e.g. 0.0.0.31) and the IPv4 subnet calculator will calculate the broadcast, network, Cisco wildcard mask, host range and quantity of hosts. Online and for free. The wildcard is the inverse netmask used for access control lists (ACL's) in Cisco routers.
+                    <p class="sub_txt" id="exp_txt">Enter IP address and netmask (decimal separated by dots (e.g. 255.255.255.0), CIDR (e.g. 29) or a Cisco wildcard (e.g. 0.0.0.31) and the IPv4 subnet calculator will calculate the broadcast, network, Cisco wildcard mask, host range and quantity of hosts. Online and for free. The wildcard is the inverse netmask used for access control lists (ACL's) in Cisco routers.
                         This free online IPv4 subnet calculator also can be used as a teaching tool and presents the subnetting results as easy-to-understand binary values.
                         We can see two things: all host bits are zeroes in a network address, in a broadcast address they are all set. First bits determine the class of your network from A to E. A, B and C are commonly used. Each class has a range of valid IP addresses.
                         Address Range of Class A - 1.0.0.1 to 126.255.255.254 (supports 16 million hosts on each of 127 networks).
@@ -74,11 +75,116 @@
                         Class D - 224.0.0.0 to 239.255.255.255 (address range reserved for multicast groups).
                         Class E - 240.0.0.0 to 254.255.255.254 (reserved for future use, research and development purposes).Your IP addressYour are from Switzerland146.70.99.240 
                     </p>
-                    <p class="exp">Expand <i class="material-icons-outlined">expand_more</i></p>
+                    <!-- <p class="exp" onclick="exp()">Expand <i class="material-icons-outlined">expand_more</i></p> -->
                 </div>
             </div>
         </section>
-        <!-- <section style="height: 160vh;"></section> -->
+
+        <section class="section2">
+            <div class="top">
+                <div class="text">
+                    <h1>Password Generator/Decryptor</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, impedit recusandae. Sed repellat in et debitis dicta quas blanditiis nam.</p>
+                </div>
+                <div class="img" style="background-image: url(blog\ page\ image.webp);"></div>
+            </div>
+            <div class="content">
+                <form action="">
+                    <label for="">COMING SOON!</label>
+                </form>
+                <div class="text">
+                    <p class="title">About passwords</p>
+                    <p class="sub_txt" id="exp_txt">Password - a secret series of characters that enables a user to access a file, computer, program or something secured with secret code.
+                        Remember! The easier a password is for the owner to remember generally means it will be easier for an attacker to guess.
+                        The strength of a password depends on the different types of characters, the overall length of the password, and whether the password can be found in a dictionary. To avoid brute force attack (crack passwords by trying as many possibilities as time and money permit) or more efficient in most cases, dictionary attack (and lists of common passwords are also typically tested) use long (at least 12 characters or more) passwords with letters (mixed lowercase and uppercase), punctuation, symbols, and numbers.
+                        Don't use dictionary words (in any language). Words are vulnerable.
+                        Avoid words spelled backwards, common misspellings, and abbreviations. Words in all languages are vulnerable.
+                        Don't use sequences or repeated characters, e.g. 12345678, 222222, abcdefg, qwerty.
+                        Don't use personal information: your name, wife's name, birthday, driver's license, passport number or similar info.
+                        The best way to create a secure and strong password - use our Strong Password Generator:)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section3">
+            <div class="top">
+                <div class="text">
+                    <h1>MAC Address Finder</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, impedit recusandae. Sed repellat in et debitis dicta quas blanditiis nam.</p>
+                </div>
+                <div class="img" style="background-image: url(blog\ page\ image.webp);"></div>
+            </div>
+            <div class="content">
+                <form action="">
+                    <label for="MAC Address or Vendor">MAC Address or Vendor</label> 
+                    <input type="text" name="" placeholder="" id=""> 
+                    <label for=""><span>Enter first 6 characters or full MAC address. Or search by Vendor name, e.g. cisco or apple*</span></label> <br>
+                    <label for=""><span>Database updated - April 25, 2020</span></label>
+                    <span class="fl">
+                        <button type="submit">Search</button>
+                        <a href="" class="cancel">Clear <i class="material-icons-outlined">close</i></a>
+                    </span>
+                </form>
+                <div class="text">
+                    <p class="title">About passwords</p>
+                    <p class="sub_txt" id="exp_txt">Password - a secret series of characters that enables a user to access a file, computer, program or something secured with secret code.
+                        Remember! The easier a password is for the owner to remember generally means it will be easier for an attacker to guess.
+                        The strength of a password depends on the different types of characters, the overall length of the password, and whether the password can be found in a dictionary. To avoid brute force attack (crack passwords by trying as many possibilities as time and money permit) or more efficient in most cases, dictionary attack (and lists of common passwords are also typically tested) use long (at least 12 characters or more) passwords with letters (mixed lowercase and uppercase), punctuation, symbols, and numbers.
+                        Don't use dictionary words (in any language). Words are vulnerable.
+                        Avoid words spelled backwards, common misspellings, and abbreviations. Words in all languages are vulnerable.
+                        Don't use sequences or repeated characters, e.g. 12345678, 222222, abcdefg, qwerty.
+                        Don't use personal information: your name, wife's name, birthday, driver's license, passport number or similar info.
+                        The best way to create a secure and strong password - use our Strong Password Generator:)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section4">
+            <div class="top">
+                <div class="text">
+                    <h1>TCP/UDP Port Finder</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, impedit recusandae. Sed repellat in et debitis dicta quas blanditiis nam.</p>
+                </div>
+                <div class="img" style="background-image: url(blog\ page\ image.webp);"></div>
+            </div>
+            <div class="content">
+                <form action="">
+                    <label for="port number">Port number or name:</label> 
+                    <input type="text" name="" placeholder="" id=""> 
+                    <label for=""><span>Enter port number (e.g. 21), service (e.g. ssh, ftp) or threat (e.g. nimda)</span></label> <br>
+                    <label for=""><span>Database updated - March 30, 2016</span></label>
+                    <span class="fl">
+                        <button type="submit">Search</button>
+                        <a href="" class="cancel">Clear <i class="material-icons-outlined">close</i></a>
+                    </span>
+                </form>
+                <div class="text">
+                    <p class="title">About TCP/UDP ports</p>
+                    <p class="sub_txt" id="exp_txt">TCP port uses the Transmission Control Protocol. TCP is one of the main protocols in TCP/IP networks. TCP is a connection-oriented protocol, it requires handshaking to set up end-to-end communications. Only when a connection is set up user's data can be sent bi-directionally over the connection.
+                        Attention! TCP guarantees delivery of data packets in the same order in which they were sent. Guaranteed communication over TCP port is the main difference between TCP and UDP. UDP port would not have guaranteed communication as TCP.
+                        UDP provides an unreliable service and datagrams may arrive duplicated, out of order, or missing without notice. UDP thinks that error checking and correction is not necessary or performed in the application, avoiding the overhead of such processing at the network interface level.
+                        UDP (User Datagram Protocol) is a minimal message-oriented Transport Layer protocol (protocol is documented in IETF RFC 768).
+                        Application examples that often use UDP: voice over IP (VoIP), streaming media and real-time multiplayer games. Many web applications use UDP, e.g. the Domain Name System (DNS), the Routing Information Protocol (RIP), the Dynamic Host Configuration Protocol (DHCP), the Simple Network Management Protocol (SNMP).
+                        TCP vs UDP - TCP: reliable, ordered, heavyweight, streaming; UDP - unreliable, not ordered, lightweight, datagrams.Your IP addressYour are from Switzerland146.70.99.199 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
     </main>
     <footer>
         <nav>
@@ -93,7 +199,7 @@
             <a href="">MAC Address Finder</a>
             <a href="">TCP/UDP Port Finder</a>
         </span>
-        
+
     </footer>
 
     

@@ -120,6 +120,23 @@ main{
 main section{
     width: 100%;
     display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
+    display: none;
+}
+
+main .section1{
+    display: flex;
+}
+
+main .section2{
+    display: none;
+}
+
+main .section3{
+    display: none;
+}
+
+main .section4{
+    display: none;
 }
 
 main section .top{
@@ -144,6 +161,7 @@ main section .top .text h1{
     font-size: 42px;
     font-family: 'Alexandria', sans-serif;
     margin-bottom: 15px;
+    
     /* font-weight: 600; */
 }
 
@@ -167,7 +185,7 @@ main section .content form{
     width: 60%;
     border-radius: 15px; background-color: white;
     /* box-shadow: ; */
-    height: 400px;
+    height: 430px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin-top: -7%;
@@ -276,6 +294,7 @@ footer{
     width: 100%;
     background-color: #1f1f1f;
     padding-bottom: 30px;
+    margin-top: auto;
 }
 
 footer nav .logo a{
@@ -390,6 +409,7 @@ footer .sp2 a{
     main section .top .text h1{
         font-size: 42px;
         margin-bottom: 15px;
+        
         /* font-weight: 600; */
     }
      
@@ -404,9 +424,9 @@ footer .sp2 a{
 
     main section .content form{
         width: 100%;
-        height: 350px;
+        height: 380px;
         margin-top: -7%;
-        padding:  7%;
+        padding:  5%;
     }
 
     main section .content .text{
@@ -441,12 +461,20 @@ footer .sp2 a{
     }
     
     main section .top .text h1{
-        font-size: 38px;
+        font-size: 36px;
         margin-bottom: 15px;
         font-weight: 500;
         line-height: 49px;
         /* font-weight: 600; */
+        -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    word-break: break-all;
     }
+
+    
 
     main section .content{
         width: 95%;
@@ -457,7 +485,7 @@ footer .sp2 a{
 
     main section .content form{
         width: 100%;
-        height: 300px;
+        height: 380px;
         margin-top: -7%;
         padding:  4%;
     }
@@ -469,7 +497,7 @@ footer .sp2 a{
 
     main section .content form{
         width: 100%;
-        height: 380px;
+        height: 450px;
         margin-top: -7%;
         padding:  6%;
     }

@@ -12,7 +12,7 @@
     height: 100vh;
     z-index: 2;
     background-color: rgb(31, 31, 31, 0.6);
-    display: none; justify-content: center; align-items: flex-start;
+    display: none; justify-content: center; align-items: center;
     padding: 5% 0;
     top: 0;
 }

@@ -89,7 +89,7 @@
                     <h1>Password Generator/Decryptor</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, impedit recusandae. Sed repellat in et debitis dicta quas blanditiis nam.</p>
                 </div>
-                <div class="img" style="background-image: url(blog\ page\ image.webp);"></div>
+                <div class="img" style="background-image: url(password.svg);"></div>
             </div>
             <div class="content">
                 <form action="" class="pass_form">
@@ -163,12 +163,21 @@
                     <h1>PDF to Word converter</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, impedit recusandae. Sed repellat in et debitis dicta quas blanditiis nam.</p>
                 </div>
-                <div class="img" style="background-image: url(blog\ page\ image.webp);"></div>
+                <div class="img" style="background-image: url(text_files.svg);"></div>
             </div>
             <div class="content">
                 <form action="">
-                    <label for="">Upload your PDF</label>
-                    <input type="file" class="file" placeholder="CLICK TO ADD">
+                        <label for="">Upload your PDF</label>
+                    <div class="file_div">
+                        <div class="txt">
+                            <p class="p1">UPLOAD FILES</p>
+                            <h4>or</h4>
+                            <p class="p2">Drop Your Files Here</p>
+                        </div>
+                        <input type="file" class="file" placeholder="CLICK TO ADD">
+                        
+                    </div>
+                    
                     <span class="fl">
                         <button type="submit">Convert</button>
                         <a href="" class="cancel">Clear <i class="material-icons-outlined">close</i></a>
@@ -231,7 +240,7 @@
                     <h1>TCP/UDP Port Finder</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, impedit recusandae. Sed repellat in et debitis dicta quas blanditiis nam.</p>
                 </div>
-                <div class="img" style="background-image: url(calculator.svg);"></div>
+                <div class="img" style="background-image: url(plug.svg);"></div>
             </div>
             <div class="content">
                 <form action="">
@@ -276,11 +285,11 @@
             </span>
         </nav>
         <span class="sp2">
-            <a href="" class="active">IPv4 subnet calculator</a>
-            <a href="">Password Generator/Decryptor</a>
-            <a href="">PDF to Word Converter</a>
-            <!-- <a href="">MAC Address Finder</a> -->
-            <a href="">TCP/UDP Port Finder</a>
+            <a class=" a"  onclick="section1on();">IPv4 subnet calculator</a>
+            <a class="a"  onclick="section2on();">Password Generator/Decryptor</a>
+            <!-- <a class="a"  onclick="section3on(); sidebarOff();">MAC Address Finder</a> -->
+            <a class="a"  onclick="section3on();">PDF to Word Converter</a>
+            <a class="a"  onclick="section4on();">TCP/UDP Port Finder</a>
         </span>
 
     </footer>
